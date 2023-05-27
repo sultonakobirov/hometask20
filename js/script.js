@@ -1,5 +1,5 @@
 let input = prompt('Number!')
-fetch(`http://numbersapi.com/${input}/year?json`)
+fetch(`http://numbersapi.com/${input}?json`)
   .then(response => response.json())
   .then(data => {
     // Обработка полученных данных
